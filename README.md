@@ -17,15 +17,34 @@ Each menu option executes a different module, making the code modular, clear, an
 ---
 
 ## 🧰 Project Structure
+ALEROSPYTHON/
+├── data_file_extraction/
+│   ├── data_file_extraction.py
+│   ├── data.txt
+│   
+│
+├── password_validator/
+│   ├── password_validator.py
+│   
+│
+├── remove_duplicates/
+│   ├── remove_duplicates.py
+│   
+│
+├── sum_digits/
+│   ├── sum_digits.py
+│   
+│
+├── translation_log_calculator/
+│   ├── translation_log_calculator.py
+│   
+│
 ├── main.py
-├── sum_digits.py
-├── password_validator.py
-├── remove_duplicates.py
-├── data_file_extraction.py
-└── translation_log_calculator.py
+├── .gitignore
+└── README.md
 
 
-Each file contains a main function named `execute()` that runs when the corresponding menu option is selected.
+Each folder contains a Python module with a main function named `execute()` that runs when the console menu calls it.
 
 ---
 
