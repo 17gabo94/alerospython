@@ -1,2 +1,12 @@
 def execute():
-    print("Has elegido la opción 3.")
+    print(remove_duplicates([1, 2, 3, 2, 4, 1, 5]))
+    # ➜ [1, 2, 3, 4, 5]
+    print(remove_duplicates(['a', 'b', 'a', 'c', 'b']))
+    # ➜ ['a', 'b', 'c']
+
+def remove_duplicates(lst):
+    result = []
+    for item in lst:
+        if item not in result:
+            result.append(item)
+    return result
