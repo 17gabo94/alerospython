@@ -76,3 +76,30 @@ while(entry != password):
    entry = input("Enter password: ")
 print("Access granted!")
 
+
+
+# ejercicio 10
+
+def isOdd(number):
+   return number % 2 != 0
+
+num1 = int(input("Enter a number: "))
+print("Is it odd Number: ", isOdd(num1))
+
+# ejercicio 11
+
+def isEven():
+    num2 = int(input("Enter a number: "))
+    if(num2 % 2 == 0):
+       print("Even")
+    else:
+      print("Odd")
+
+isEven();
+
+# ejercicio 12
+
+def square(num):
+   return num * num
+
+print("Square value is: ", square(int(input("Enter a number: "))))
