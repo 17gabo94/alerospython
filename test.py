@@ -84,7 +84,7 @@ def isOdd(number):
    return number % 2 != 0
 
 num1 = int(input("Enter a number: "))
-print("Is it odd Number: ", isOdd(num1))
+print("Is it odd Number? ", isOdd(num1))
 
 # ejercicio 11
 
@@ -95,7 +95,7 @@ def isEven():
     else:
       print("Odd")
 
-isEven();
+isEven()
 
 # ejercicio 12
 
@@ -109,18 +109,46 @@ print("Square value is: ", square(int(input("Enter a number: "))))
 def addNumbers(num1, num2):
    return num1 + num2
 
-print("Sum value is: ", addNumbers(int(input("Enter a number one: ")), int(input("Enter a number two: "))))
+num3 = int(input("Enter a number one: "))
+num4 = int(input("Enter a number two: "))
+print("Sum value is: ", addNumbers( int(input("Enter a number one: ")), int(input("Enter a number two: "))) )
+# print("Sum value is: ", addNumbers( num3, num4) )
+
 
 # ejercicio 14 
 
 def checkPositive(num):
     if(num > 0):
-        print("Positive")
+        return "Positive"
     elif(num == 0):
-        print("Zero")
+        return "Zero"
     else:
-        print("Negative")
+        return "Negative"
 
-checkPositive(int(input("Enter a number: ")))
+checkPositive("The number is: ", int(input("Enter a number: ")))
+
+# ejercicio 15
 
 
+def isEven2(number):
+    if(number % 2 == 0):
+       return "Even"
+    else:
+      return "Odd"
+
+for num in range(1,11):
+   print("The number ", num , " is: ", isEven2(num))
+
+
+# ejercicio 16 
+
+def countEvens(numbers):
+    totalEvens = 0
+    for number in numbers:
+        if(number % 2 == 0):
+            totalEvens += 1
+    return totalEvens
+
+numbers = list(range(1,11)) 
+
+print("Total Evens: ", countEvens(numbers))
