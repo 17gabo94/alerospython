@@ -103,3 +103,24 @@ def square(num):
    return num * num
 
 print("Square value is: ", square(int(input("Enter a number: "))))
+
+# ejercicio 13
+
+def addNumbers(num1, num2):
+   return num1 + num2
+
+print("Sum value is: ", addNumbers(int(input("Enter a number one: ")), int(input("Enter a number two: "))))
+
+# ejercicio 14 
+
+def checkPositive(num):
+    if(num > 0):
+        print("Positive")
+    elif(num == 0):
+        print("Zero")
+    else:
+        print("Negative")
+
+print("The number is: ", checkPositive(int(input("Enter a number: "))))
+
+
