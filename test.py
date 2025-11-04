@@ -121,6 +121,6 @@ def checkPositive(num):
     else:
         print("Negative")
 
-print("The number is: ", checkPositive(int(input("Enter a number: "))))
+checkPositive(int(input("Enter a number: ")))
 
 
